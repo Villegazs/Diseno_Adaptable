@@ -38,5 +38,10 @@ presentadas en el siguiente orden:
 
 ![TabletVertical](https://github.com/user-attachments/assets/67db2a10-0be4-4599-a992-831818693273)
 
+### Formato horizontal:
+
+![TabletHorizontal](https://github.com/user-attachments/assets/3b40f9c7-33e0-401a-9649-0a2bf2a3b3c3)
+
+
 > Mismo link para todos los prototipos: https://www.figma.com/design/q22q1LlwHCfvucr0JP3XGX/Wireframe-dise%C3%B1o-adaptable?node-id=0-1&t=IEVbg4ZLgm02eDnn-1
 
