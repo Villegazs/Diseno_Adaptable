@@ -18,3 +18,17 @@ Disños en papel: servirán como base para los prototipos en todos los dispositi
 
 ![wirePapelAdaptable2 (20240804080853)](https://github.com/user-attachments/assets/11c1ceac-2fe3-4293-b95c-02f0c10349d7)
 
+#### Diseño en media para dispositios móviles:
+presentadas en el siguiente orde:
+- Home
+- Sobre mi
+- Menú desplegable de navegación
+- Servicios
+- Servicio detallado
+- Contacto
+- Testimonios
+- FAQ
+
+![Android](https://github.com/user-attachments/assets/58b8a4ba-41ec-434a-9fd3-e1f6b07d9b4a)
+
+> Link a figma: https://www.figma.com/design/q22q1LlwHCfvucr0JP3XGX/Wireframe-dise%C3%B1o-adaptable?node-id=0-1&t=IEVbg4ZLgm02eDnn-1 
