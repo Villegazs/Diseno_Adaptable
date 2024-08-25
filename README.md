@@ -12,3 +12,9 @@ La página cuenta con las siguientes secciones:
 - **Preguntas frecuentes**: lugar donde poder resolver preguntas acerca tanto del servicio como del médico, que puedan resultarle útiles a la mayoría de usuarios.
 
 ### Diseño celular
+Disños en papel: servirán como base para los prototipos en todos los dispositivos, ya que se centra más en la distribución y orden de la información
+
+![wirePapelAdaptable (20240804080833)](https://github.com/user-attachments/assets/94fb2c0f-81ed-4bc4-ad3a-2c10eddd386d)
+
+![wirePapelAdaptable2 (20240804080853)](https://github.com/user-attachments/assets/11c1ceac-2fe3-4293-b95c-02f0c10349d7)
+
