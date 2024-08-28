@@ -42,6 +42,10 @@ presentadas en el siguiente orden:
 
 ![TabletHorizontal](https://github.com/user-attachments/assets/3b40f9c7-33e0-401a-9649-0a2bf2a3b3c3)
 
+## Diseño en alta para Móvil
+
+![Diseno_en_Alta_Movil](https://github.com/user-attachments/assets/42526df0-ade6-4197-a719-0d6ef6dafdd1)
+
 
 > Mismo link para todos los prototipos: https://www.figma.com/design/q22q1LlwHCfvucr0JP3XGX/Wireframe-dise%C3%B1o-adaptable?node-id=0-1&t=IEVbg4ZLgm02eDnn-1
 
