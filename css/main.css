@@ -3,8 +3,8 @@
         background:#0C3054;
         height:65px;
         text-align: right;
-        padding-right: 10px;
         margin-bottom:30px;
+        width:100%;
     }
 
     .boton{
@@ -24,6 +24,16 @@
     #ui_banco{
       width:360px;
      /* background-image:url(https://res.cloudinary.com/djezosori/image/upload/v1728666017/AndroidH_Home_qiimde.png);*/
+    }
+    #ui_banco h2
+    {
+        text-align:center;
+    }
+
+    .title_box
+    {
+        text-align:center;
+        padding:0 27% 0 27%;
     }
     .presentacion_profesional
     {
@@ -116,6 +126,57 @@
     .pie_contacto div p {
         margin-left: 30px; /* Espacio entre el círculo y el texto */
     }
+
+    .quien_soy
+{
+  height:430px;
+}
+.texto_quien
+{
+  padding:5px 15% 0 15%;
+}
+.alinear_texto
+{
+  text-align:center;
+  margin:0;
+}
+.carrera_medica
+{
+  padding-top:30px;
+  height:1040px;
+}
+.imagenes_quien
+{
+  margin:0px auto 0px auto;
+}
+.asociados
+{
+  height:230px;
+  width:320px;
+  margin:35px auto 0 auto;
+}
+.display_flex
+{
+  display:flex;
+  justify-content:center;
+   flex-wrap: wrap;
+}
+.img_asociado
+{
+  width:150px;
+}
+.ubicacion
+{
+  height:650px;
+}
+.mapa {
+  margin: 35px auto 0 auto;
+  height: 575px;
+  width: 320px;
+  border-radius: 60px;
+  border: 1px solid black; /* Añade un borde sólido negro de 5px */
+}
+
     
 }
 body{
