@@ -141,10 +141,11 @@
 .carrera_medica
 {
   padding-top:30px;
-  height:1040px;
+  height:1300px;
 }
 .imagenes_quien
 {
+  width:100%;
   margin:0px auto 0px auto;
 }
 .asociados
@@ -220,6 +221,42 @@
     padding-right:10%;
     padding-left:10%;
     margin: 0 auto 0 auto;
+  }
+  .faq{
+  }
+  .box_faq
+  {
+    margin: 10% 7% 0 7%; 
+    border-left:1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+  .header_faq
+  {
+    background:#0C3054;
+  }
+  .header_faq h5
+  {
+    color: white;
+    padding:20px;
+  }
+  .content_faq
+  {
+    padding:0 15% 0 5%;
+  }
+  .ask
+  {
+    padding: 2% 7% 5% 7%;
+  }
+  .ask_box
+  {
+    height:80px;
+    border-radius:10px;
+    border:1px solid black;
+  }
+  .ask button
+  {
+    justify-content:right;
   }
 }
 
