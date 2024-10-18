@@ -71,9 +71,7 @@
       width:300px;
     }
     .texto_pie
-    {
-      height:30px;
-      
+    { 
       margin:auto;
     }
     .menu_pie
@@ -122,10 +120,14 @@
 
     .quien_soy
 {
-  height:430px;
 }
 .texto_quien
 {
+  padding:5px 15% 0 15%;
+}
+.titulo_quien
+{
+  text-align: center;
   padding:5px 15% 0 15%;
 }
 .alinear_texto
@@ -136,7 +138,6 @@
 .carrera_medica
 {
   padding-top:30px;
-  height:1300px;
 }
 .imagenes_quien
 {
@@ -145,8 +146,6 @@
 }
 .asociados
 {
-  height:230px;
-  width:320px;
   margin:35px auto 0 auto;
 }
 .display_flex
@@ -166,7 +165,6 @@
 .mapa {
   margin: 35px auto 0 auto;
   height: 575px;
-  width: 320px;
   border-radius: 60px;
   border: 1px solid black; /* Añade un borde sólido negro de 5px */
  }
