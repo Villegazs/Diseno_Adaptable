@@ -37,13 +37,11 @@
     }
     .presentacion_profesional
     {
-      margin:35px auto 0px auto;
-        height:300px;
+        margin:35px auto 0px auto;
         width: 360px;
     }
     .nombre_profesional
     {
-        height:50px;
         margin:0px 120px 0px 120px;
         text-align:center;
     }
