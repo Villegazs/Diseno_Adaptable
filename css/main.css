@@ -251,6 +251,65 @@
   {
     justify-content:right;
   }
+  .presentation
+{
+  padding:0 5% 0 5%;
+  height:350px;
+}
+.name_presentation
+{
+  height:230px;
+  width:50%;
+  text-align:center;
+  align-items:center;
+}
+.content_presentation
+{
+  padding:0 5% 0 5%;
+}
+.image_presentation
+{
+  height:230px;
+  width:50%;
+  background:#0C3054;
+  background-image: url(https://raw.githubusercontent.com/Villegazs/Diseno_Adaptable/refs/heads/main/images/Foto_DraVictoriaMorales.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contact_box
+{
+  margin:0 10% 0 10%;
+  border-radius:10px;
+  padding:10% 5%;
+  background:#0C3054;
+}
+.contact_rect
+{
+  height:40px;
+  border-radius:30px;
+  background:white;
+}
+.contact_text
+{
+  color:white;
+  margi-top:10px;
+  margin-bottom:5px;
+}
+.big_contact_rect
+{
+  height:130px;
+  border-radius:30px;
+  margin-bottom:20px;
+  background:white;
+}
+.text_align_right
+{
+  text-align:right;
+}
+.map_section
+{
+  padding-top:10%;
+}
 }
 
 body{
