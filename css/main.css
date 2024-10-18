@@ -170,21 +170,23 @@
  }
   .pg_servicio
   {
-    height:950px;
-    width:280px;
     margin:0 auto 0 auto;
   }
   .service_box
   {
-    margin:60px auto 0 auto;
+    margin: 5%;
+    padding: 7%;
     border:1px solid #0C3054;
-    height:385px;
   }
   .content_service
   {
-    width:240px;
     margin: 5px 5% 5px 5%;
     text-align:center;
+  }
+  .service_box img
+  {
+    width:100%;
+    margin:0 auto 0 auto;
   }
   .service_box h4
   {
@@ -194,8 +196,6 @@
   .one_service_box
   {
     text-align:center;
-    width:330px;
-    height: 900px;
     margin:0 auto 0 auto;
   }
   .one_service_box h2{
