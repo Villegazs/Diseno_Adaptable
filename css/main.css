@@ -311,9 +311,329 @@
   padding-top:10%;
 }
 }
+@media (width > 450px) {
+  nav{
+    background:#0C3054;
+    height:65px;
+    text-align: right;
+    margin-bottom:30px;
+    width:100%;
+}
+
+.boton{
+    text-align: center;
+    border-radius: 25px;
+    background-color: #45A8B5;
+    color:#F0F0F2;
+    width: 140px;
+    height:50px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+.boton:hover{
+    background-color: #0C3054;
+    color:#F0F0F2;
+}
+#ui_banco{
+  width: 600px;
+  border:1px solid black;
+ /* background-image:url(https://res.cloudinary.com/djezosori/image/upload/v1728666017/AndroidH_Home_qiimde.png);*/
+}
+#ui_banco h2
+{
+    text-align:center;
+}
+
+.title_box
+{
+    text-align:center;
+    padding:0 27% 0 27%;
+}
+.presentacion_profesional
+{
+}
+.text_profesional
+{
+width:50%;
+}
+.nombre_profesional
+{
+    padding:0 0 0 60%;
+    text-align:center;
+}
+.foto_profesional
+{
+width:50%;
+}
+.servicio
+{
+text-align: center;
+}
+.desarrollo_servicio
+{
+text-align: left;
+padding: 5px 5% 0 5%;
+}
+.imagen_servicio
+{
+border-radius:20px;
+margin: 5px 10% 0px 10%;
+display:flex;
+width:80%;
+}
+.specific_service_box
+{
+padding: 5%;
+width:40%;
+}
+.texto_pie
+{ 
+  margin:auto;
+}
+.menu_pie
+{
+  text-align:center;
+  height: 185px;
+  margin-top:65px;
+
+}
+.linea {
+  border-top: 1px solid black;
+  height: 2px;
+  max-width: 175px;
+  margin: 0 auto 0 auto;
+}
+
+.pie_contacto {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos */
+    margin-top: 30px;
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#circle {
+    background-image: url(https://raw.githubusercontent.com/Villegazs/Diseno_Adaptable/refs/heads/main/images/Foto_DraVictoriaMorales.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    width: 20px; /* Ajusta el tamaño del círculo */
+    height: 20px;
+    margin-right: 10px; /* Espacio entre el círculo y el texto */
+    margin-left: 10px;
+   border: 1px solid black; 
+}
+
+.pie_contacto {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+
+.pie_contacto div p {
+    margin-left: 30px; /* Espacio entre el círculo y el texto */
+}
+
+.quien_soy
+{
+}
+.texto_quien
+{
+padding:5px 15% 0 15%;
+}
+.titulo_quien
+{
+text-align: center;
+padding:5px 15% 0 15%;
+}
+.alinear_texto
+{
+text-align:center;
+margin:0;
+}
+.carrera_medica
+{
+padding-top:30px;
+}
+.imagenes_quien
+{
+width:100%;
+margin:0px auto 0px auto;
+}
+.asociados
+{
+margin:35px auto 0 auto;
+}
+.display_flex
+{
+display:flex;
+justify-content:center;
+align-items:center;
+flex-wrap: wrap;
+}
+.img_asociado
+{
+width:150px;
+}
+.ubicacion
+{
+height:650px;
+}
+.mapa {
+margin: 35px auto 0 auto;
+height: 575px;
+border-radius: 60px;
+border: 1px solid black; /* Añade un borde sólido negro de 5px */
+}
+.pg_servicio
+{
+margin:0 auto 0 auto;
+}
+.service_box
+{
+margin: 5%;
+padding: 7%;
+border:1px solid #0C3054;
+}
+.content_service
+{
+margin: 5px 5% 5px 5%;
+text-align:center;
+}
+.service_box img
+{
+width:100%;
+margin:0 auto 0 auto;
+}
+.service_box h4
+{
+margin-top:30px;
+color:#45A8B5;
+}
+.one_service_box
+{
+text-align:center;
+margin:0 auto 0 auto;
+}
+.one_service_box h2{
+padding-right:35%;
+padding-left:35%;
+}
+.one_service_box img
+{
+padding-top:40px;
+width:330px;
+}
+.one_service_box p
+{
+text-align:left;
+padding-top:30px;
+padding-right:10%;
+padding-left:10%;
+margin: 0 auto 0 auto;
+}
+.faq{
+}
+.box_faq
+{
+margin: 10% 7% 0 7%; 
+border-left:1px solid black;
+border-right: 1px solid black;
+border-bottom: 1px solid black;
+}
+.header_faq
+{
+background:#0C3054;
+}
+.header_faq h5
+{
+color: white;
+padding:20px;
+}
+.content_faq
+{
+padding:0 15% 0 5%;
+}
+.ask
+{
+padding: 2% 7% 5% 7%;
+}
+.ask_box
+{
+height:80px;
+border-radius:10px;
+border:1px solid black;
+}
+.ask button
+{
+justify-content:right;
+}
+.presentation
+{
+padding:0 5% 0 5%;
+height:350px;
+}
+.name_presentation
+{
+height:230px;
+width:50%;
+text-align:center;
+align-items:center;
+}
+.content_presentation
+{
+padding:0 5% 0 5%;
+}
+.image_presentation
+{
+height:230px;
+width:50%;
+background:#0C3054;
+background-image: url(https://raw.githubusercontent.com/Villegazs/Diseno_Adaptable/refs/heads/main/images/Foto_DraVictoriaMorales.png);
+background-repeat: no-repeat;
+background-size: cover;
+}
+.contact_box
+{
+margin:0 10% 0 10%;
+border-radius:10px;
+padding:10% 5%;
+background:#0C3054;
+}
+.contact_rect
+{
+height:40px;
+border-radius:30px;
+background:white;
+}
+.contact_text
+{
+color:white;
+margi-top:10px;
+margin-bottom:5px;
+}
+.big_contact_rect
+{
+height:130px;
+border-radius:30px;
+margin-bottom:20px;
+background:white;
+}
+.text_align_right
+{
+text-align:right;
+}
+.map_section
+{
+padding-top:10%;
+}  
+}
 
 body{
     background-color: #F0F0F2;
+    margin: 0;
 }
 /*nav{
     background:#0C3054;
