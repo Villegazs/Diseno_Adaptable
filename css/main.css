@@ -327,7 +327,7 @@
     color:#F0F0F2;
     width: 140px;
     height:50px;
-    margin-top: 10px;
+    margin-top: 30px;
     text-decoration: none;
 }
 .boton:hover{
@@ -518,17 +518,9 @@ color:#45A8B5;
 }
 .one_service_box
 {
+padding:0 10%;
 text-align:center;
 margin:0 auto 0 auto;
-}
-.one_service_box h2{
-padding-right:35%;
-padding-left:35%;
-}
-.one_service_box img
-{
-padding-top:40px;
-width:330px;
 }
 .one_service_box p
 {
@@ -632,6 +624,19 @@ text-align:right;
 .map_section
 {
 padding-top:10%;
+}
+.p_specific_service
+{
+  width:50%;
+}
+.display_flex_no_vertical
+{
+display:flex;
+flex-wrap: wrap;
+}
+.big_image
+{
+ width:80%;
 }
 }
 
