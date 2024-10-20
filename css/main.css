@@ -498,19 +498,18 @@ margin:0 auto 0 auto;
 }
 .service_box
 {
-margin: 5%;
+width:30%;
+margin: 2% 2%;
 padding: 7%;
 border:1px solid #0C3054;
 }
 .content_service
 {
-margin: 5px 5% 5px 5%;
 text-align:center;
 }
 .service_box img
 {
 width:100%;
-margin:0 auto 0 auto;
 }
 .service_box h4
 {
