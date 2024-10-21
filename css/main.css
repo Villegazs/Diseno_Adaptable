@@ -232,6 +232,9 @@ padding:5px 10% 0 10%;
   height: 575px;
   border-radius: 60px;
   border: 1px solid black; /* Añade un borde sólido negro de 5px */
+  background-image: url("../images/UbicacionConsultorio.png");
+  background-repeat: no-repeat;
+  background-size: cover;
  }
   .pg_servicio
   {
@@ -336,7 +339,7 @@ padding:5px 10% 0 10%;
   height:230px;
   width:50%;
   background:#0C3054;
-  background-image: url(https://raw.githubusercontent.com/Villegazs/Diseno_Adaptable/refs/heads/main/images/Foto_DraVictoriaMorales.png);
+  background-image: url("../images/Foto_DraVictoriaMorales.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -385,6 +388,21 @@ padding:5px 10% 0 10%;
 .direccion
 {
   display:none;
+}
+.content_display
+{
+  width:100%;
+}
+.about_me
+{
+  padding:0 10%;
+}
+.star
+{
+  color:#0C3054;
+  text-align:center;
+  font-size:40px;
+  width:12%;
 }
 }
 @media (width > 450px) {
@@ -458,6 +476,7 @@ width:40%;
 }
 .texto_pie
 { 
+  text-align:center;
   text-decoration: none;
   color:black;
   margin:auto;
@@ -567,6 +586,9 @@ margin: 35px auto 0 auto;
 height: 575px;
 border-radius: 60px;
 border: 1px solid black; /* Añade un borde sólido negro de 5px */
+background-image: url("../images/UbicacionConsultorio.png");
+background-repeat: no-repeat;
+background-size: cover;
 }
 .pg_servicio
 {
@@ -662,7 +684,7 @@ padding:0 5% 0 5%;
 height:230px;
 width:50%;
 background:#0C3054;
-background-image: url(https://raw.githubusercontent.com/Villegazs/Diseno_Adaptable/refs/heads/main/images/Foto_DraVictoriaMorales.png);
+background-image: url("../images/Foto_DraVictoriaMorales.png");
 background-repeat: no-repeat;
 background-size: cover;
 }
@@ -727,6 +749,25 @@ flex-wrap: wrap;
 .direccion
 {
   text-align:center;
+}
+.content_display
+{
+  width:50%;
+}
+.about_me
+{
+  padding:0 10%;
+}
+.star
+{
+  color:#0C3054;
+  text-align:center;
+  font-size:40px;
+  width:15%;
+}
+.display_flex_no_center
+{
+
 }
 }
 
