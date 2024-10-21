@@ -1,12 +1,65 @@
-@media (width <= 450px) {
-    nav{
-        background:#0C3054;
-        height:65px;
-        text-align: right;
-        margin-bottom:30px;
-        width:100%;
-    }
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 28px;
+  color:white;
+}
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+ul li a {
+  text-decoration: none;
+  color:white;
+  text-align:left;
+  padding:0 10px 10px 10px;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+      display: block;
+  }
+
+  ul {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      background-color: #fff;
+      border: 1px solid white;
+      top:65px;
+      width:100%;
+  }
+  ul.show {
+      display: flex;
+  }
+
+  ul li {
+      padding-top:5px;
+      border:1px solid white;
+      background:#0C3054;
+  }
+
+  ul li:last-child {
+      margin-bottom: 0;
+  }
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background:#0C3054;
+  height:65px;
+  text-align: right;
+  padding-right: 10px;
+}
+
+@media (width <= 450px) {
     .boton{
         text-align: center;
         border-radius: 25px;
@@ -72,12 +125,13 @@
     }
     .texto_pie
     { 
+      text-decoration: none;
+      color:black;
       margin:auto;
     }
     .menu_pie
     {
       text-align:center;
-      height: 185px;
       margin-top:65px;
     
     }
@@ -330,13 +384,6 @@ padding:5px 10% 0 10%;
 }
 }
 @media (width > 450px) {
-  nav{
-    background:#0C3054;
-    height:65px;
-    text-align: right;
-    margin-bottom:30px;
-    width:100%;
-}
 
 .boton{
     text-align: center;
@@ -407,12 +454,13 @@ width:40%;
 }
 .texto_pie
 { 
+  text-decoration: none;
+  color:black;
   margin:auto;
 }
 .menu_pie
 {
   text-align:center;
-  height: 185px;
   margin-top:65px;
 
 }
