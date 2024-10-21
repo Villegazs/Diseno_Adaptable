@@ -23,6 +23,7 @@ ul li a {
 @media (max-width: 768px) {
   .menu-toggle {
       display: block;
+      margin-right: 10px;
   }
 
   ul {
@@ -50,13 +51,16 @@ ul li a {
 }
 
 nav{
+  position: fixed;  /* Fija el nav en la parte superior */
+  top: 0;           /* Lo coloca en la parte superior */
+  left: 0;
+  width: 100%;      /* Hace que el nav ocupe todo el ancho de la pantalla */
+  z-index: 1000;    /* Asegura que esté por encima de otros elementos */
+  background: #0C3054; /* Asegúrate de que tenga fondo para que no se superponga con el contenido */
+  height: 65px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background:#0C3054;
-  height:65px;
-  text-align: right;
-  padding-right: 10px;
 }
 
 @media (width <= 450px) {
@@ -728,7 +732,7 @@ flex-wrap: wrap;
 
 body{
     background-color: #F0F0F2;
-    margin: 0;
+    padding-top:65px;
 }
 /*nav{
     background:#0C3054;
