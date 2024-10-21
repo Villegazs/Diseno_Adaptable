@@ -8,17 +8,21 @@
 </head>
 <body>  
 </body>
-    <nav>
-        <a href="inicio.html">
-            <img src="images/Logo_Azul.png" width = "128" alt="Logo de Victoria Morales">
-        </a> 
-        <!-- Navegacion de menus -->
-            <a href="sobre_mi.html">Sobre Mí</a>
-            <a href="servicios.html">Servicios</a>
-            <a href="contacto.html">Contacto</a>
-            <a href="testimonios.html">Testimonios</a>
-            <a href="preguntas_frecuentes.html">Preguntas Frecuentes</a>
-    </nav>
+<nav>
+  <a href="index.html">
+      <img src="images/Logo_Azul.png" width="128" alt="Logo de Victoria Morales">
+  </a>
+  <div class="menu-toggle" id="menu-toggle">
+      &#9776; <!-- Símbolo de hamburguesa -->
+  </div>
+  <ul id="menu-items">
+      <li><a href="sobre_mi.html">Sobre Mí</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="testimonios.html">Testimonios</a></li>
+      <li><a href="preguntas_frecuentes.html">Preguntas Frecuentes</a></li>
+  </ul>
+</nav>
     <section class = "one_service_box">
       <h2>Test Epigenético</h2>
       <img class = "big_image"src="https://raw.githubusercontent.com/Villegazs/Diseno_Adaptable/refs/heads/main/images/TestEpigeneticoCelular.png" alt="">
@@ -35,18 +39,18 @@
       <button class = "boton">Contactar</button>
     </section>
     <section class = "menu_pie">
-      <p class = "texto_pie">Inicio</p>
+      <a class = "texto_pie" href="index.html">Inicio</a>
       <div class = "linea"></div>
-      <p class = "texto_pie">Sobre Mí</p>
+      <a class = "texto_pie" href="sobre_mi.html">Sobre Mí</a>
       <div class = "linea"></div>
-      <p class = "texto_pie">Servicios</p>
+      <a class = "texto_pie" href="servicios.html">Servicios</a>
       <div class = "linea"></div>
-      <p class = "texto_pie">Testimonios</p>
+      <a class = "texto_pie" href="testimonios.html">Testimonios</a>
       <div class = "linea"></div>
-      <p class = "texto_pie">Preguntas Frecuentes</p>
+      <a class = "texto_pie" href="preguntas_frecuentes.html">Preguntas Frecuentes</a>
       <div class = "linea"></div>
-      <p class = "texto_pie">Contáctanos</p>
-    </section>
+      <a class = "texto_pie" href="contacto.html">Contáctanos</a>
+  </section>
     <section class = "pie_contacto">
       <p>+57 305 4241832</p>
       <div>
@@ -55,6 +59,8 @@
         <div id = "circle">
         </div>
       <p> @dra.victoriamorales.fisiatra</p>
-    </section>
+  </section>
+    <script src="js/menu.js"></script>
+<!-- Navegacion de menus -->
 
 </html>
