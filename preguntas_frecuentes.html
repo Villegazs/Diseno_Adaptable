@@ -27,18 +27,18 @@
 </body>
     <section class = "faq">
      <h2 class = "title_box"> Preguntas Frecuentes</h2>
-      <section class = "box_faq">
-        <div class = "header_faq">
-          <h5>¿Que es un fisiatra?</h5>
-        </div>
-        <div class = "content_faq">
-          <p>Es un profesional de la salud que se enfoca en la evaluación, diagnóstico, y tratamiento de condiciones que afectan el sistema musculoesquelético y nervioso.
-          </p>
-        </div>
-      </section>
+     <section class="box_faq">
+      <div class="header_faq" onclick="toggleFaq(this)">
+        <h5>¿Qué es un fisiatra?</h5>
+          <span class="icon">+</span>
+      </div>
+      <div class="content_faq" style="display: none;">
+          <p>Es un profesional de la salud que se enfoca en la evaluación, diagnóstico, y tratamiento de condiciones que afectan el sistema musculoesquelético y nervioso.</p>
+      </div>
+  </section>
       <section class = "ask">
         <h5>Hazme una pregunta</h5>
-        <div class = "ask_box"></div>
+        <input type="text" id="pregunta" name="pregunta" class="ask_box" placeholder="Escribe tu pregunta">
         <button class = "boton">Enviar</button>
         
       </section>
@@ -66,6 +66,7 @@
         <p> @dra.victoriamorales.fisiatra</p>
     </section>
       <script src="js/menu.js"></script>
+      <script src="js/faq.js"></script>
  <!-- Navegacion de menus -->
 
 </html>

@@ -292,6 +292,7 @@ padding:5px 10% 0 10%;
   .service_box h4
   {
     margin-top:30px;
+    text-decoration: none;
     color:#45A8B5;
   }
   .one_service_box
@@ -318,26 +319,39 @@ padding:5px 10% 0 10%;
   }
   .faq{
   }
-  .box_faq
-  {
+  .box_faq {
     margin: 10% 7% 0 7%; 
-    border-left:1px solid black;
+    border-left: 1px solid black;
     border-right: 1px solid black;
     border-bottom: 1px solid black;
-  }
-  .header_faq
-  {
-    background:#0C3054;
-  }
-  .header_faq h5
-  {
+}
+
+.header_faq {
+    background: #0C3054;
+    cursor: pointer; /* Cambia el cursor al pasar sobre el encabezado */
+    display: flex; /* Usamos flexbox para alinear el icono y el texto */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_faq h5 {
+  padding: 20px;
     color: white;
-    padding:20px;
-  }
-  .content_faq
-  {
-    padding:0 15% 0 5%;
-  }
+    margin: 0; /* Elimina el margen por defecto */
+    text-align: right; /* Alinea el texto a la derecha */
+}
+
+.icon {
+    color: white; /* Color del icono */
+    font-size: 20px; /* Tamaño del icono */
+    margin-right: 20px;
+    display: block;
+}
+.content_faq {
+  padding: 0 5% 0 5%;
+}
+
+
   .ask
   {
     padding: 2% 7% 5% 7%;
@@ -686,18 +700,29 @@ border-left:1px solid black;
 border-right: 1px solid black;
 border-bottom: 1px solid black;
 }
-.header_faq
-{
-background:#0C3054;
+.header_faq {
+  background: #0C3054;
+  cursor: pointer; /* Cambia el cursor al pasar sobre el encabezado */
+  display: flex; /* Usamos flexbox para alinear el icono y el texto */
+  justify-content: space-between;
+  align-items: center;
 }
-.header_faq h5
-{
-color: white;
-padding:20px;
+
+.header_faq h5 {
+padding: 20px;
+  color: white;
+  margin: 0; /* Elimina el margen por defecto */
+  text-align: right; /* Alinea el texto a la derecha */
 }
-.content_faq
-{
-padding:0 15% 0 5%;
+
+.icon {
+  color: white; /* Color del icono */
+  font-size: 20px; /* Tamaño del icono */
+  margin-right: 20px;
+  display: block;
+}
+.content_faq {
+padding: 0 5% 0 5%;
 }
 .ask
 {
@@ -705,6 +730,12 @@ padding: 2% 7% 5% 7%;
 }
 .ask_box
 {
+padding: 5px 0 5px 5%; 
+width: 95%;
+background:white;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+outline: none;                  /* Elimina el borde azul por defecto en focos */
+transition: all 0.3s ease;  
 height:80px;
 border-radius:10px;
 border:1px solid black;
