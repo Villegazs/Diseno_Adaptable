@@ -385,9 +385,14 @@ padding:5px 10% 0 10%;
 }
 .contact_rect
 {
+  width: 95%;
+  padding: 5px 0 5px 5%;
   height:40px;
   border-radius:30px;
   background:white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  outline: none;                  /* Elimina el borde azul por defecto en focos */
+  transition: all 0.3s ease;  
 }
 .contact_text
 {
@@ -397,10 +402,15 @@ padding:5px 10% 0 10%;
 }
 .big_contact_rect
 {
+  width: 95%;
   height:130px;
+  padding: 5px 0 5px 5%;
   border-radius:30px;
   margin-bottom:20px;
   background:white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  outline: none;                  /* Elimina el borde azul por defecto en focos */
+  transition: all 0.3s ease;  
 }
 .text_align_right
 {
@@ -736,9 +746,14 @@ background:#0C3054;
 }
 .contact_rect
 {
+padding: 5px 0 5px 5%; 
+width: 95%;
 height:40px;
 border-radius:30px;
 background:white;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+outline: none;                  /* Elimina el borde azul por defecto en focos */
+transition: all 0.3s ease;      /* Transición suave para efectos */
 }
 .contact_text
 {
@@ -748,10 +763,15 @@ margin-bottom:5px;
 }
 .big_contact_rect
 {
+  width: 95%;
+  padding: 5px 0 5px 5%;
 height:130px;
 border-radius:30px;
 margin-bottom:20px;
 background:white;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+outline: none;                  /* Elimina el borde azul por defecto en focos */
+transition: all 0.3s ease;      /* Transición suave para efectos*/
 }
 .text_align_right
 {
