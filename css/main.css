@@ -1,3 +1,16 @@
+/* Estilo de la sección antes de que la animación se active */
+.animate-section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Estilo cuando la animación se activa */
+.animate-section.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* Encabezados usan Roboto */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto', sans-serif;
@@ -12,21 +25,24 @@ p, a {
   display: none;
   cursor: pointer;
   font-size: 28px;
-  color:white;
+  color: white;
 }
 
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: flex;
+  display: flex; /* Mantener en flex para el modo escritorio */
+  transition: max-height 0.3s ease-out; /* Transición suave */
+  overflow: hidden; /* Oculta el contenido que excede el contenedor */
+  max-height: 0; /* Inicialmente, el menú está colapsado */
 }
 
 ul li a {
   text-decoration: none;
-  color:white;
-  text-align:left;
-  padding:0 10px 10px 10px;
+  color: white;
+  text-align: left;
+  padding: 0 10px 10px 10px;
   display: block;
 }
 
@@ -37,26 +53,26 @@ ul li a {
   }
 
   ul {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      background-color: #fff;
-      border: 1px solid white;
-      top:65px;
-      width:100%;
+    flex-direction: column;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid white;
+    top: 65px;
+    width: 100%;
   }
+
   ul.show {
-      display: flex;
+    max-height: 300px; /* Ajusta según la cantidad de elementos en tu menú */
   }
 
   ul li {
-      padding-top:5px;
-      border:1px solid white;
-      background:#0C3054;
+    padding-top: 5px;
+    border: 1px solid white;
+    background: #0C3054;
   }
 
   ul li:last-child {
-      margin-bottom: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -74,6 +90,13 @@ nav{
 }
 
 @media (width <= 450px) {
+  .logo {
+    background-image: url('../images/LogoMinimalista.png'); /* Ruta de la imagen del logo */
+    background-size: contain;      /* Ajusta la imagen al tamaño del contenedor */
+    background-repeat: no-repeat;   /* No repetir la imagen */
+    width: 128px;                  /* Ancho del logo */
+    height: 64px;                 /* Altura del logo */
+}
     .boton{
         text-align: center;
         border-radius: 25px;
@@ -416,7 +439,13 @@ padding:5px 10% 0 10%;
 }
 }
 @media (width > 450px) {
-
+  .logo {
+    background-image: url('../images/Logo_Azul.png'); /* Ruta de la imagen del logo */
+    background-size: contain;      /* Ajusta la imagen al tamaño del contenedor */
+    background-repeat: no-repeat;   /* No repetir la imagen */
+    width: 128px;                  /* Ancho del logo */
+    height: 65px;                 /* Altura del logo */
+}
 .boton{
     text-align: center;
     border-radius: 25px;
