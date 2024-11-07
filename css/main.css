@@ -27,7 +27,6 @@ h1{
 .menu-toggle {
   display: none;
   cursor: pointer;
-  font-size: 28px;
   color: white;
 }
 
@@ -48,7 +47,6 @@ ul li a {
   text-decoration: none;
   color: white;
   text-align: left;
-  font-size: 28px;
   padding: 30px 10px 10px 10px;
   display: block;
 }
@@ -905,6 +903,9 @@ flex-wrap: wrap;
 }
 }
 @media (width > 768px) {
+  nav{
+    justify-content: center;
+  }
   .logo {
     background-image: url('../images/Logo_Azul.png'); /* Ruta de la imagen del logo */
     background-size: contain;      /* Ajusta la imagen al tamaño del contenedor */
@@ -942,6 +943,7 @@ flex-wrap: wrap;
 }
 #menu-items
 {
+  margin-left: 20%;
   height: 100%;
 }
 #ui_banco{
@@ -961,6 +963,7 @@ flex-wrap: wrap;
 }
 .presentacion_profesional
 {
+  padding: 0 20% 0 20%;
 }
 .text_profesional
 {
@@ -977,6 +980,7 @@ width:30%;
 }
 .servicio
 {
+  padding: 0 20% 0 20%;
 text-align: center;
 }
 .desarrollo_servicio
@@ -1209,7 +1213,7 @@ justify-content:right;
 }
 .presentation
 {
-padding:0 5% 10% 5%;
+padding:0 20% 10% 20%;
 }
 .name_presentation
 {
@@ -1224,7 +1228,7 @@ padding:0 5% 0 5%;
 }
 .image_presentation
 {
-height:230px;
+height:460px;
 width:50%;
 background:#0C3054;
 background-image: url("../images/Foto_DraVictoriaMorales.png");
@@ -1233,9 +1237,9 @@ background-size: cover;
 }
 .contact_box
 {
-margin:0 10% 0 10%;
+margin:0 20% 0 20%;
 border-radius:10px;
-padding:10% 5%;
+padding:2% 5%;
 background:#0C3054;
 }
 .contact_rect
@@ -1273,7 +1277,7 @@ text-align:right;
 }
 .map_section
 {
-padding:5%
+padding:5% 20%;
 }
 .p_specific_service
 {
@@ -1326,7 +1330,7 @@ flex-wrap: wrap;
 
 body{
     background-color: #F0F0F2;
-    padding-top:160px;
+    padding-top:120px;
     font-size: 18px;
     margin:0;
 }
