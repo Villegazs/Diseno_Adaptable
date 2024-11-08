@@ -1081,7 +1081,7 @@ margin:0;
 }
 .carrera_medica
 {
-padding:30px 5% 0 5%;
+padding:30px 20% 0 20%;
 }
 .imagenes_quien
 {
@@ -1091,7 +1091,7 @@ padding: 1%;
 }
 .asociados
 {
-padding: 0 10%;
+padding: 0 20%;
 margin:35px auto 0 auto;
 }
 .display_flex
@@ -1108,7 +1108,7 @@ flex-wrap: wrap;
 }
 .ubicacion
 {
-padding:0 5%;
+padding:0 20%;
 }
 .mapa {
 
@@ -1122,11 +1122,12 @@ background-size: cover;
 }
 .pg_servicio
 {
+  padding: 0 20%;
 margin:0 auto 0 auto;
 }
 .service_box
 {
-width:30%;
+width:40%;
 margin: 2% 2%;
 padding: 2%;
 border:1px solid #0C3054;
@@ -1146,7 +1147,7 @@ color:#45A8B5;
 }
 .one_service_box
 {
-padding:0 10%;
+padding:0 20%;
 text-align:center;
 margin:0 auto 0 auto;
 }
@@ -1159,6 +1160,7 @@ padding-left:10%;
 margin: 0 auto 0 auto;
 }
 .faq{
+  padding: 0 20%;
 }
 .box_faq
 {
@@ -1285,12 +1287,15 @@ padding:5% 20%;
 }
 .display_flex_no_vertical
 {
-display:flex;
-flex-wrap: wrap;
+  display:flex;
+  align-items:center;
+  flex-wrap: wrap;
 }
 .big_image
 {
- width:80%;
+  height: 500px;
+ width:90%;
+ object-fit: cover;
 }
 .contact_name
  {
@@ -1313,7 +1318,7 @@ flex-wrap: wrap;
 }
 .about_me
 {
-  padding:0 10%;
+  padding:0 20%;
 }
 .star
 {
