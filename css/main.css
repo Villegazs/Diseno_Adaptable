@@ -514,6 +514,9 @@ padding:5px 10% 0 10%;
   font-size:40px;
   width:12%;
 }
+.reviewImg{
+  width: 100%;
+}
 }
 @media (768px > width > 450px) {
   body {
@@ -949,12 +952,49 @@ flex-wrap: wrap;
 .see-more.hidden {
   visibility: hidden;
 }
-.content_display
+.reviewImg
 {
-  height:fit-content;
-  padding-left: 2%;
-  width:46%;
+  height: 350px;
+  object-fit: cover;
+  width: 100%;
 }
+
+.display_flex_no_vertical {
+  display: flex;
+  justify-content: center;
+}
+
+.reviews-scroll-container {
+  display: flex;
+  overflow-x: auto; /* Habilita el desplazamiento horizontal */
+  scroll-snap-type: x mandatory; /* Opcional, agrega un efecto de "snap" */
+  gap: 1rem; /* Espacio entre cada reseña */
+}
+
+.content_display {
+  flex: 0 0 auto; /* Evita que las reseñas se redimensionen */
+  width: 400px; /* Ajusta el tamaño según lo que desees */
+  padding: 1rem;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+/* Desplazamiento suave */
+.reviews-scroll-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.reviews-scroll-container::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+
+.reviews-scroll-container::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+
+
 .about_me
 {
   padding:0 10%;
@@ -1453,12 +1493,57 @@ padding:5% 20%;
   visibility: hidden;
 }
 
-.content_display
-{
-  padding-left: 2%;
-  width:45%;
-  height: fit-content;
+.reviews-scroll-container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 10px;
+  justify-content: left;
 }
+
+.reviewImg
+{
+  height: 350px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.display_flex_no_vertical {
+  display: flex;
+  justify-content: center;
+}
+
+.reviews-scroll-container {
+  display: flex;
+  overflow-x: auto; /* Habilita el desplazamiento horizontal */
+  scroll-snap-type: x mandatory; /* Opcional, agrega un efecto de "snap" */
+  gap: 1rem; /* Espacio entre cada reseña */
+}
+
+.content_display {
+  flex: 0 0 auto; /* Evita que las reseñas se redimensionen */
+  width: 400px; /* Ajusta el tamaño según lo que desees */
+  padding: 1rem;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+/* Desplazamiento suave */
+.reviews-scroll-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.reviews-scroll-container::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+
+.reviews-scroll-container::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+
 .about_me
 {
   padding:0 20%;
