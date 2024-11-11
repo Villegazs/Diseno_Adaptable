@@ -50,6 +50,9 @@ ul li a {
   padding: 30px 10px 10px 10px;
   display: block;
 }
+li:hover a {
+  color: #0C3054;
+}
 .see-more {
   border-radius: 10px;
   display: inline-block;
@@ -1030,6 +1033,7 @@ flex-wrap: wrap;
     height:50px;
     margin-top: 30px;
     text-decoration: none;
+    cursor: pointer;
 }
 .boton:hover{
     background-color: #0C3054;
@@ -1041,7 +1045,7 @@ flex-wrap: wrap;
   background-color: #45A8B5;
   color:#F0F0F2;
   width: 140px;
-  height:50px;
+  height: 50px;
   margin-top: 30px;
   text-decoration: none;
 }
@@ -1049,6 +1053,12 @@ flex-wrap: wrap;
   background-color: #0C3054;
   color:#F0F0F2;
 }
+.boton_pc a{
+  text-decoration: none;
+  color: #F0F0F2;
+  cursor: pointer;
+}
+
 #menu-items
 {
   margin-left: 20%;
@@ -1251,9 +1261,23 @@ margin:0 auto 0 auto;
   padding: 10px;
   justify-content: left;
 }
+/* Desplazamiento suave */
+.display_flex.scroll_horizontal::-webkit-scrollbar {
+  height: 8px;
+}
+
+.display_flex.scroll_horizontal::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+
+.display_flex.scroll_horizontal::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
 .service_box {
   width: 450px; /* Ancho fijo para cada caja de servicio */
-  margin: 0 10px;
+  margin: 50px 10px;
   padding: 2%;
   border: 1px solid #0C3054;
   box-sizing: border-box;
@@ -1519,6 +1543,7 @@ padding:5% 20%;
   flex: 0 0 auto; /* Evita que las reseñas se redimensionen */
   width: 400px; /* Ajusta el tamaño según lo que desees */
   padding: 1rem;
+  margin-bottom: 50px;
   flex-direction: column;
   box-sizing: border-box;
 }
@@ -1552,6 +1577,13 @@ padding:5% 20%;
 .display_flex_no_center
 {
 
+}
+.selected
+{
+  background-color: #45A8B5;
+}
+.selected a{
+  color: #0C3054;
 }
 }
 
