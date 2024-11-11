@@ -50,7 +50,33 @@ ul li a {
   padding: 30px 10px 10px 10px;
   display: block;
 }
+.see-more {
+  border-radius: 10px;
+  display: inline-block;
+  background-color: #45A8B5;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+}
 
+.see-more:hover {
+  background-color: #0C3054;
+}
+.truncate-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* Oculta el botón pero mantiene el espacio con visibility: hidden */
+.see-more.hidden {
+  visibility: hidden;
+}
 @media (max-width: 768px) {
   .menu-toggle {
       display: block;
@@ -865,6 +891,8 @@ flex-wrap: wrap;
 }
 .big_image
 {
+  object-fit: cover;
+  height: 400px;
  width:80%;
 }
 .contact_name
@@ -882,9 +910,50 @@ flex-wrap: wrap;
 {
   text-align:center;
 }
+.content_display p {
+  display: -webkit-box;
+  -webkit-line-clamp: 7; /* Limita el texto a 3 líneas */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 1em;
+  transition: max-height 0.3s ease; /* Añadir transición para suavizar el cambio */
+}
+
+.content_display p.expanded {
+  display: block; /* Cambiar el comportamiento cuando el texto está expandido */
+  -webkit-line-clamp: unset; /* Remover el truncamiento */
+  max-height: none; /* Permitir que el texto crezca sin límite */
+}
+
+
+.see-more {
+  border-radius: 10px;
+  display: inline-block;
+  background-color: #45A8B5;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.see-more:hover {
+  background-color: #0C3054;
+}
+
+
+/* Oculta el botón pero mantiene el espacio con visibility: hidden */
+.see-more.hidden {
+  visibility: hidden;
+}
 .content_display
 {
-  width:50%;
+  height:fit-content;
+  padding-left: 2%;
+  width:46%;
 }
 .about_me
 {
@@ -965,6 +1034,12 @@ flex-wrap: wrap;
 {
   padding: 0 20% 0 20%;
 }
+.presentacion_profesional .imagenes_quien
+{
+  width:50%;
+  margin-left: 10px;
+  margin-right: 0;
+}
 .text_profesional
 {
 text-align: center;
@@ -976,7 +1051,9 @@ width:40%;
 }
 .foto_profesional
 {
-width:30%;
+  margin-bottom: 20px;
+  margin-right: 10px;
+width:50%;
 }
 .servicio
 {
@@ -1066,8 +1143,10 @@ padding:5px 10% 0 10%;
 .texto_quien_izquierda
 {
 text-align: left;
-width: 30%;
-margin:5px 10% 0 10%;
+width: 25%;
+margin:5px;
+padding-right: 10%;
+padding-left: 10%;
 }
 .titulo_quien
 {
@@ -1125,25 +1204,46 @@ background-size: cover;
   padding: 0 20%;
 margin:0 auto 0 auto;
 }
-.service_box
-{
-width:40%;
-margin: 2% 2%;
-padding: 2%;
-border:1px solid #0C3054;
+.display_flex.scroll_horizontal {
+  display: flex;
+  flex-wrap: nowrap; /* Mantiene todos los elementos en una sola fila */
+  overflow-x: auto; /* Habilita el desplazamiento horizontal */
+  gap: 20px; /* Espacio entre los elementos */
+  padding: 10px;
+  justify-content: left;
 }
-.content_service
-{
-text-align:center;
+.service_box {
+  width: 450px; /* Ancho fijo para cada caja de servicio */
+  margin: 0 10px;
+  padding: 2%;
+  border: 1px solid #0C3054;
+  box-sizing: border-box;
+  overflow: hidden; /* Oculta cualquier contenido desbordado */
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* Coloca los elementos verticalmente */
+  flex: 0 0 auto; /* Evita que el ancho cambie */
 }
-.service_box img
-{
-width:100%;
+/* Selecciona solo .animate-section dentro de .service_box */
+.service_box .animate-section {
+  animation: none !important; /* Desactiva cualquier animación */
+  transition: none !important; /* Desactiva cualquier transición */
 }
-.service_box h4
-{
-margin-top:30px;
-color:#45A8B5;
+
+.content_service {
+  overflow-wrap: break-word; /* Rompe palabras largas si es necesario */
+  word-break: break-word; /* Evita que el texto se desborde del contenedor */
+  text-align: center;
+}
+
+.service_box img {
+  width: 100%;
+  height: auto; /* Ajusta la imagen para mantener su proporción */
+}
+
+.service_box h4 {
+  margin-top: 30px;
+  color: #45A8B5;
 }
 .one_service_box
 {
@@ -1215,7 +1315,7 @@ justify-content:right;
 }
 .presentation
 {
-padding:0 20% 10% 20%;
+padding:0 20% 5% 20%;
 }
 .name_presentation
 {
@@ -1312,9 +1412,52 @@ padding:5% 20%;
 {
   text-align:center;
 }
+.content_display p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Limita el texto a 3 líneas */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 4.8em; /* Ajusta el valor según el tamaño de la línea */
+  margin-bottom: 1em;
+  transition: max-height 0.3s ease; /* Añadir transición para suavizar el cambio */
+}
+
+.content_display p.expanded {
+  display: block; /* Cambiar el comportamiento cuando el texto está expandido */
+  -webkit-line-clamp: unset; /* Remover el truncamiento */
+  max-height: none; /* Permitir que el texto crezca sin límite */
+}
+
+
+.see-more {
+  border-radius: 10px;
+  display: inline-block;
+  background-color: #45A8B5;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.see-more:hover {
+  background-color: #0C3054;
+}
+
+
+/* Oculta el botón pero mantiene el espacio con visibility: hidden */
+.see-more.hidden {
+  visibility: hidden;
+}
+
 .content_display
 {
-  width:50%;
+  padding-left: 2%;
+  width:45%;
+  height: fit-content;
 }
 .about_me
 {
