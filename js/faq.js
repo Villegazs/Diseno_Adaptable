@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", function () {
 function toggleFaq(header) {
     const content = header.nextElementSibling; // Selecciona el siguiente elemento (content_faq)
     if (content.style.display === "none") {
@@ -8,3 +9,4 @@ function toggleFaq(header) {
         header.querySelector('.icon').textContent = '+'; // Cambia el icono a "+"
     }
 }
+});

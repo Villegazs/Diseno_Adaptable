@@ -2,9 +2,8 @@
   "name": "proyecto_disenoadaptable",
   "version": "1.0.0",
   "description": "La página consiste en un portafolio médico que cuente con todas las caracteristicas necesarias para que los usuarios, encuentren de manera satisfactoria todo lo que necesitan para obtener un servicio de calidad, y el agente médico pueda ofrecer todo de manera clara y segura.\r > *PD: Se esta planteando la posibilidad de potenciar la idea en dirección de construir una especio de directorio de portafolios, donde poder filtrar y buscar especialistas de distintos campos junto con su información.*",
-  "main": "index.js",
   "scripts": {
-    "dev": "parcel index.html",
+    "start": "parcel index.html",
     "build": "parcel build index.html",
     "clean": "rimraf dist"
   },
@@ -15,6 +14,7 @@
     "parcel": "^2.12.0"
   },
   "dependencies": {
+    "firebase": "^11.0.1",
     "rimraf": "^6.0.1"
   }
 }

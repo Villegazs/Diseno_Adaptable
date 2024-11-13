@@ -202,6 +202,7 @@ nav{
     }
     .servicio
     {
+      margin: 2%;
       text-align: center;
     }
     .desarrollo_servicio
@@ -421,7 +422,7 @@ padding:5px 10% 0 10%;
   }
   .presentation
 {
-  padding:0 5% 10% 5%;
+  padding:0 10% 10% 10%;
 }
 .name_presentation
 {
@@ -437,7 +438,7 @@ padding:5px 10% 0 10%;
 .image_presentation
 {
   height:230px;
-  width:50%;
+  width:100%;
   background:#0C3054;
   background-image: url("../images/Foto_DraVictoriaMorales.png");
   background-repeat: no-repeat;
@@ -822,7 +823,7 @@ justify-content:right;
 }
 .presentation
 {
-padding:0 5% 10% 5%;
+  margin: 0 10% 10% 10%;
 }
 .name_presentation
 {
@@ -980,6 +981,7 @@ flex-wrap: wrap;
   flex: 0 0 auto; /* Evita que las reseñas se redimensionen */
   width: 400px; /* Ajusta el tamaño según lo que desees */
   padding: 1rem;
+  margin-bottom: 50px;
   flex-direction: column;
   box-sizing: border-box;
 }
