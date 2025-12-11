@@ -566,6 +566,31 @@ p {
     background: var(--soft-gray);
 }
 
+/* Doctoralia Badge */
+.doctoralia-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: linear-gradient(135deg, #00B8A9, #16a085);
+    color: var(--white);
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    box-shadow: var(--shadow-sm);
+    animation: pulse 2s infinite;
+}
+
+.doctoralia-badge i {
+    font-size: 1.1rem;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+}
+
 .testimonials-container {
     position: relative;
     max-width: 800px;
@@ -594,11 +619,35 @@ p {
 }
 
 .testimonial-content p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-style: italic;
     color: var(--text-dark);
     margin-bottom: 2rem;
-    line-height: 1.8;
+    line-height: 1.7;
+    position: relative;
+    padding: 1rem 0;
+}
+
+.testimonial-content p::before {
+    content: '"';
+    position: absolute;
+    top: -10px;
+    left: -20px;
+    font-size: 3rem;
+    color: var(--primary-color);
+    opacity: 0.3;
+    font-family: var(--font-primary);
+}
+
+.testimonial-content p::after {
+    content: '"';
+    position: absolute;
+    bottom: -30px;
+    right: -20px;
+    font-size: 3rem;
+    color: var(--primary-color);
+    opacity: 0.3;
+    font-family: var(--font-primary);
 }
 
 .testimonial-author strong {
@@ -611,6 +660,28 @@ p {
 .testimonial-author span {
     color: var(--text-light);
     font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.verified-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    background: var(--success);
+    color: var(--white);
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-top: 0.5rem;
+}
+
+.verified-badge i {
+    font-size: 0.8rem;
 }
 
 .testimonial-nav {
