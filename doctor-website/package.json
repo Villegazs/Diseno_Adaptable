@@ -1,0 +1,22 @@
+{
+  "name": "doctor-website",
+  "version": "1.0.0",
+  "description": "A website for a doctor featuring services and contact information.",
+  "main": "src/js/app.js",
+  "scripts": {
+    "start": "live-server src",
+    "build": "echo 'Build step can be added here.'"
+  },
+  "keywords": [
+    "doctor",
+    "website",
+    "healthcare",
+    "rehabilitation"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
