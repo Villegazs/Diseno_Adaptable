@@ -169,7 +169,7 @@ p {
     margin-bottom: 0.25rem;
 }
 
-.nav-logo span {
+.nav-logo p {
     font-size: 0.9rem;
     color: var(--text-light);
     font-weight: 400;
@@ -301,7 +301,11 @@ p {
     display: flex;
     justify-content: center;
 }
-
+.doctor-logo {
+    width: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+}
 .doctor-photo {
     width: 400px;
     height: 500px;
@@ -1111,6 +1115,9 @@ p {
     .hero-image {
         order: -1;
     }
+    .doctor-logo {   
+        width: 180px;
+    }
     
     .doctor-photo {
         width: 300px;
@@ -1167,7 +1174,9 @@ p {
     .hero-image {
         text-align: center;
     }
-    
+    .doctor-logo {   
+        width: 170px;
+    }
     .doctor-photo {
         width: 250px;
         height: 320px;
@@ -1260,7 +1269,9 @@ p {
         width: 100%;
         text-align: center;
     }
-    
+    .doctor-logo {   
+        width: 150px;
+    }
     .doctor-photo {
         width: 200px;
         height: 280px;
@@ -1296,7 +1307,8 @@ p {
     
     .contact-item {
         flex-direction: column;
-        text-align: center;
+        text-align: center; 
+        align-items: center;
         gap: 0.5rem;
     }
     
